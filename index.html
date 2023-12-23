@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav id="nav" class="d-flex">
+        <img id="logo" src="./assets/QuizGrad.svg" alt="image">
+
+        <div class="option">How it works?</div>
+        <div class="option">Features</div>
+        <div class="option">About us</div>
+        <button class="btn btn-outline-warning">Login</button>
+
+    </nav>
+
+    <section id="pop-up" class="d-flex flex-column align-items-center d-none">
+        <div id="pop-r1">Choose your favorite topic</div>
+        <div id="pop-r2">Select more than 5 topics to start quiz</div>
+        <div id="subjects d-flex justify-content-around">
+            <input type="checkbox" name="maths" id="mathmatics">
+            <label for="mathmatics">mathmatics</label>
+            <input type="checkbox" name="phy" id="physics">
+            <label for="physics">physics</label>
+            <input type="checkbox" name="chem" id="chemistry">
+            <label for="chemistry">chemistry</label>
+            <input type="checkbox" name="history" id="history">
+            <label for="history">history</label>
+            <input type="checkbox" name="cs" id="cs">
+            <label for="cs">computer Science</label>
+        </div> 
+        <button id="enterQuiz" class="btn btn-outline-warning">Start Quiz</button>
+    </section>
+
+    <section id="hero-section" class="d-flex justify-content-around m-5">
+        <div id="col-1">
+            <div id="r1">Learn <br> new concepts <br> for each question</div>
+            <div id="r2">We help you prepare for exams and quizes </div>
+            <button id="startQuiz" class="btn btn-warning ">Start solving</button>
+        </div>
+        <img id="col-2" src="./assets/1022603_93128-OJM4KX-162-01.svg" alt="images">
+
+    </section>
+
+
+<section id="quiz-section" class="d-none">
+    <div id="quiz-container" class="d-flex justify-content-around m-5">
+        <div id="question-container" class="d-flex flex-column align-items-center">
+            <h2 id="question"></h2>
+            <div id="options-container" class="d-flex flex-column">
+                <!-- Options will be dynamically added here -->
+            </div>
+            <div>
+                <button id="previousButton" class="btn btn-warning mt-3">previous</button>
+                <button id="nextButton" class="btn btn-warning mt-3">Next</button>
+                <button id="skipButton" class="btn btn-warning mt-3">skip</button>
+            </div>
+        </div>
+        <div id="score-container">
+            <h2>Score</h2>
+            <p id="score">0</p>
+        </div>
+    </div>
+</section>
+
+<section id="results-section" class="d-none">
+    <div id="results-container" class="d-flex flex-column align-items-center m-5">
+        <h2>Quiz Results</h2>
+        <p id="final-score">Your final score is: <span id="user-score">0</span></p>
+        <button id="retryButton" class="btn btn-warning mt-3">Retry Quiz</button>
+        <button id="endQuiz" class="btn btn-warning mt-3">End Quiz</button>
+    </div>
+</section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

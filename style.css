@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav {
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ECECE8;
+}
+
+#logo {
+    flex: 2fr;
+    margin-right: 30vw;
+}
+
+.option {
+    color: #E0E0E0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+}
+.option:hover{
+    color: black;
+    cursor: pointer;
+}
+#col-1{
+    display: flex;
+    flex-direction: column;
+    flex: 1fr;
+    width: 40vw;
+    height: 60vh;
+    align-items: first baseline;
+}
+#r1{
+    width: 25vw;
+    color: #333;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 30px 30px 30px 90px;
+}
+#r2{
+    color: #828282;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 30px;
+}
+#col-2{
+    flex: 2fr;
+    width: 60vw;
+    height: 60vh;
+}
+
+.topic{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+#pop-up{
+    margin: 50px;
+    width: 80vw;
+    height: 50 vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-around;
+    /* visibility: hidden; */
+}
+#subjects{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#pop-r1{
+    color: #333;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 5px;
+}
+
+#pop-r2{
+    color: #333;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+label{
+    padding: 5px 2px;
+    text-align: center;
+    outline: none;
+    border-radius: 4px;
+    gap: 20px;
+
+    padding: 20px;
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 104%; /* 15.36px */
+}
+input:checked + label {
+    background-color: #ecd805;
+    padding: 10px;
+    margin: 17px;
+    border-radius: 4px;
+}
+input[type="checkbox"]{
+    display: none;
+}
