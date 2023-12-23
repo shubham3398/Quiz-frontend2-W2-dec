@@ -15,6 +15,41 @@ let quizData = [
                 "question": "Who discover AC current?",
                 "options": ["Albert Einstein", "Issac Newton", "Tesla", "F. Scott Fitzgerald"],
                 "answer": "Tesla"
+            },
+            {
+                "question": "Who discover AC current?",
+                "options": ["Albert Einstein", "Issac Newton", "Tesla", "F. Scott Fitzgerald"],
+                "answer": "Tesla"
+            },
+            {
+                "question": "Who discover AC current?",
+                "options": ["Albert Einstein", "Issac Newton", "Tesla", "F. Scott Fitzgerald"],
+                "answer": "Tesla"
+            }
+            {
+                "question": "Who discover AC current?",
+                "options": ["Albert Einstein", "Issac Newton", "Tesla", "F. Scott Fitzgerald"],
+                "answer": "Tesla"
+            },
+            {
+                "question": "Who discover AC current?",
+                "options": ["Albert Einstein", "Issac Newton", "Tesla", "F. Scott Fitzgerald"],
+                "answer": "Tesla"
+            },
+            {
+                "question": "Who discover AC current?",
+                "options": ["Albert Einstein", "Issac Newton", "Tesla", "F. Scott Fitzgerald"],
+                "answer": "Tesla"
+            },
+            {
+                "question": "Who discover AC current?",
+                "options": ["Albert Einstein", "Issac Newton", "Tesla", "F. Scott Fitzgerald"],
+                "answer": "Tesla"
+            },
+            {
+                "question": "Who discover AC current?",
+                "options": ["Albert Einstein", "Issac Newton", "Tesla", "F. Scott Fitzgerald"],
+                "answer": "Tesla"
             }
             // more questions...
         ]
