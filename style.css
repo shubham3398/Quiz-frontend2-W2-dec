@@ -28,6 +28,21 @@
     color: black;
     cursor: pointer;
 }
+.menuButton{
+    display: none;
+}
+#menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#hero-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
 #col-1{
     display: flex;
     flex-direction: column;
@@ -66,21 +81,41 @@
     height: 100px;
     background-color: red;
 }
+
+
 #pop-up{
-    margin: 50px;
-    width: 80vw;
-    height: 50 vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #c1bcbc50;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#popup-body{
+    position: relative;
+    padding: 20px;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    justify-content: space-around;
-    /* visibility: hidden; */
+    background-color: white;
+    border-radius: 10px;
+    gap: 20px
 }
-#subjects{
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: black;
+}
+.category{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     align-items: center;
 }
 
@@ -104,13 +139,14 @@
 }
 
 label{
-    padding: 5px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
     text-align: center;
     outline: none;
     border-radius: 4px;
-    gap: 20px;
-
-    padding: 20px;
+    gap: 3px;
     color: #000;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Roboto;
@@ -119,12 +155,100 @@ label{
     font-weight: 500;
     line-height: 104%; /* 15.36px */
 }
+
 input:checked + label {
     background-color: #ecd805;
-    padding: 10px;
-    margin: 17px;
     border-radius: 4px;
+    margin: 3px;
 }
-input[type="checkbox"]{
+input[type="checkbox"], input[type="radio"]{
     display: none;
+}
+.unselect{
+    display: none;
+}
+
+.category input:checked + label>.unselect{
+    display: inline-block;
+    background-color: #000;
+    color: white;
+}
+
+.question-options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.questions{
+    width: 90%;
+    height: 60vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+}
+.question{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #ecd805;
+    padding: 20px;
+    border-radius: 6px;
+}
+.question-options label{
+    background-color: #828282;
+    padding: 20px;
+}
+.question-options input:checked + label{
+    color: white;
+    font-size: 18px;
+}
+
+#results-section{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b0abab40;
+}
+#results-container{
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    width: 50vw;
+    height: 40vh;
+    position: relative;
+    align-items: center;
+    gap: 40px;
+}
+
+@media screen and (max-width : 450px){
+    .menuButton{
+        display: flex;
+    }
+    .navoption, .navlogin{
+        display: none;
+    }
+
+    #hero-section{
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+    }
+    #col1{
+        display: flex;
+    }
+    #r1{
+        font-size: 30px;
+    }
+    #r1, #r2{
+        width: 100%;
+    }
+    #col-2{
+        display: none;
+    }
 }
